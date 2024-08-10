@@ -1,5 +1,5 @@
 <template>
-    <div class="inc-exp-container">
+  <div class="inc-exp-container">
     <div>
       <h4>Income</h4>
       <p id="money-plus" class="money plus">+${{ income }}</p>
@@ -12,17 +12,16 @@
 </template>
 
 <script setup>
- import { defineProps } from 'vue';
+import { defineProps } from 'vue';
 
 const props = defineProps({
   income: {
     type: Number,
-    required: true
+    required: true,
   },
   expenses: {
     type: Number,
-    required: true
+    required: true,
   },
 });
-
 </script>
